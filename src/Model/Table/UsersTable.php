@@ -4,7 +4,7 @@ namespace App\Model\Table;
 
 use cake\ORM\Table;
 
-class CadernosTable extends Table {
+class UsersTable extends Table {
 
 }
 

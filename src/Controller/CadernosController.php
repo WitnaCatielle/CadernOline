@@ -43,8 +43,10 @@ class CadernosController extends AppController {
 
         if ($cadernosTable->delete($caderno)){
             $msg = "Caderno removido com sucesso";
+            $this->Flash->set($msg,['element'=>'error']);
         }else {
             $msg = "Erro ao remover caderno";
+            $this->Flash->set($msg);
         }
 
         $this->redirect('cadernos/index');
@@ -59,10 +61,12 @@ class CadernosController extends AppController {
 
         if ($cadernosTable->save($caderno)) {
             $msg = "Caderno cadastrado com sucesso";
+            $this->Flash->set($msg,['element'=>'success']);
         }else {
             $msg = "Erro ao cadastrar o caderno";
+            $this->Flash->set($msg,['element'=>'error']);
         }
-        $this->set('msg', $msg);
+        $this->redirect('Cadernos/index');
     }
 
 
