@@ -48,9 +48,11 @@ class AppController extends Controller
                 'controller' => 'Cadernos',
                 'action' => 'index'
             ],
-            'logoutRedirect' => 'Users',
+            'logoutRedirect' => [
+                'controller' => 'Users',
             'action' => 'login'
-            ]);
+            ]]
+        );
 
         /*
          * Enable the following components for recommended CakePHP security settings.
