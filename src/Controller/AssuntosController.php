@@ -18,7 +18,7 @@ class AssuntosController extends AppController {
 
         $assuntosTable = TableRegistry::get('Assuntos');
         $assunto = $assuntosTable->newEntity();
-        $this->set('assuntos',$assunto);
+        $this->set('assunto',$assunto);
 
     }
 
