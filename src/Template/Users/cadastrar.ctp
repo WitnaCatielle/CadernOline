@@ -1,4 +1,5 @@
 <h1>Cadastrar Usuário</h1>
+
 <?php
     echo $this->Form->create('$user',['action' => 'salvar']);
     echo $this->Form->input('username');
