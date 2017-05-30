@@ -29,6 +29,8 @@ class CadernosController extends AppController {
 
         $caderno = $cadernosTable->get($id);
 
+
+
         $this->set('caderno', $caderno);
 
         $this->render('novo');
