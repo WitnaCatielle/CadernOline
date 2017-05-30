@@ -46,7 +46,7 @@ class AppController extends Controller
         $this->loadcomponent('Auth',[
             'loginRedirect' => [
                 'controller' => 'Cadernos',
-                'action' => 'index'
+                'action' => 'novo'
             ],
             'logoutRedirect' => [
                 'controller' => 'Users',
