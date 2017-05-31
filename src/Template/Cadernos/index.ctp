@@ -34,4 +34,14 @@
 
     echo $this->Html->Link('Logout', ['controller' => 'Users','action' => 'logout']);
 ?>
+<div class="paginator">
+    <ul class="pagination">
+        <?php
+        echo $this->Paginator->prev('Voltar');
+        echo $this->Paginator->numbers();
+        echo $this->Paginator->next('Avançar');
+        ?>
+
+     </ul>
+ </div>
 
